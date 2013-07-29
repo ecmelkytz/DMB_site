@@ -1,0 +1,32 @@
+html,body
+{
+    height:100%;
+}
+ 
+#wrap
+{
+  min-height: 100%;  
+}
+ 
+#main
+{
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+ 
+.footer 
+{
+    position: relative;
+    font-size:11px;
+    right:0;
+    left:0;
+    margin-top: 0px; /* negative value of footer height */
+    clear:both;
+    height: 50px;
+    padding-bottom:10px;
+    margin-bottom:0;
+    padding-top:20px;
+    padding-left:50px;
+    background-color:#000000;
+    color:#fff;
+} 
