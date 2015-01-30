@@ -6,7 +6,7 @@
     <title>Dünya Mühendislik Bilgisayar</title>
   </head>
   <body>
-	  <footer class="footer" style="background-color:#000000">
+    <footer class="footer" style="background-color:#000000">
       <div class="span12">
         <div class="container">
           <div class="span10 offset1">
@@ -14,9 +14,9 @@
               <a> ©2013 Dünya Mühendislik Bilgisayar Sist. ve İlet. San. Tic. Ltd. Şti. </a> 
             </p>
             <p class="pull-right">
-				      <a href="resim/anasayfa/belge.jpg" target="_blank"><img src="resim/hizmetk.jpg"></a>
-			      </p>
-			      <center>
+              <a href="resim/anasayfa/belge.jpg" target="_blank"><img src="resim/hizmetk.jpg"></a>
+            </p>
+            <center>
               <div class="footer-links">
                 <a href="https://www.facebook.com"  class="facebook" title="Facebook" target="_blank"><img src="resim/anasayfa/fb.png"></a>
                 <a href="https://twitter.com" class="twitter" title="Twitter" target="_blank"><img src="resim/anasayfa/twitter.png"></a>
@@ -24,7 +24,7 @@
               </div>
             </center>
           </div>
-			  </div>
+        </div>
       </div>
     </footer> 
   </body>
