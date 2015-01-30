@@ -20,10 +20,10 @@
         String ad=request.getParameter("ad");
         String email=request.getParameter("email");
         String not=request.getParameter("not");
-  		  String yaz="insert into iletisim(ad,email,not) values('"+ad+"','"+email+"','"+not+"')";
+        String yaz="insert into iletisim(ad,email,not) values('"+ad+"','"+email+"','"+not+"')";
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost/site","root", "");
         Statement st=con.createStatement();
-  			st.executeUpdate(yaz);
+      	st.executeUpdate(yaz);
         st.close();
         con.close();
         request.getRequestDispatcher("./iletisim.jsp").forward(request,response);
