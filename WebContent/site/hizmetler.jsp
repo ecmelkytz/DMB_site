@@ -68,7 +68,7 @@
             					<li><a href="logout.jsp">Çıkış</a></li>
             				<% }
             				else { %>
-            					<a class="dropdown-toggle" href="#" data-toggle="dropdown""> Giriş Yap <strong class="caret"></strong></a>
+            					<a class="dropdown-toggle" href="#" data-toggle="dropdown"> Giriş Yap <strong class="caret"></strong></a>
             					<div class="dropdown-menu" style="padding: 20px; padding-bottom: -30px;" >
 								<form  method="post" action="login"  >
 
