@@ -7,19 +7,19 @@
     <meta name="author" content="">
 
     <link href="bootstrap-master/docs/assets/css/bootstrap.css" rel="stylesheet">
-	  <link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
-	  <link href="bootstrap-master/docs/assets/css/docs.css" rel="stylesheet">
-	  <link href="bootstrap-master/docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">  
+	   <link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	   <link href="bootstrap-master/docs/assets/css/docs.css" rel="stylesheet">
+	   <link href="bootstrap-master/docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link rel="shortcut icon" href="bootstrap-master/docs/assets/ico/favicon.png">
-    
+
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
-    
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-146052-10']);
@@ -29,7 +29,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script> 
+    </script>
   </head>
 
   <body style="background-color:#eeeeee" data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -43,35 +43,34 @@
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
               <li class="dropdown" >
-              	<% 
-              		session = request.getSession();
-              		if (session.getAttribute("email") != null ){
-              	%>
-              		<a><%= session.getAttribute("ad") %> <%= session.getAttribute("soyad")%></a>
-              		<li><a href="logout.jsp">Çıkış</a></li>
-              	<% }
-              	else { %>
-              		<a class="dropdown-toggle" href="#" data-toggle="dropdown"> Giriş Yap <strong class="caret"></strong></a>
-              		<div class="dropdown-menu" style="padding: 20px; padding-bottom: -30px;">
-  								  <form  method="post" action="Login.jsp">
-  								    E-mail :
-  								    <input type="text" name="email" value=""><br>
-  								    Parola :
-  								    <input type="password" name="password" value=""><br>
-  								    <input type="submit" name="Submit" value="Giriş" class = "btn btn-primary" style = "width:2in;position: relative;left:10px;" ><br><br>
-  								    <center><a href = "loginkayit.jsp" style = "position: relative;"> Üye ol </a></center>
-  								  </form>
-  							  </div>
-              	<% } %>
-        		  </li>
+              	 <%
+              		  session = request.getSession();
+              	  	if (session.getAttribute("email") != null ){ %>
+              	  	  <a><%= session.getAttribute("ad") %> <%= session.getAttribute("soyad")%></a>
+              		    <li><a href="logout.jsp">Çıkış</a></li>
+                 	<% }
+                 	else { %>
+              	    	<a class="dropdown-toggle" href="#" data-toggle="dropdown"> Giriş Yap <strong class="caret"></strong></a>
+              		    <div class="dropdown-menu" style="padding: 20px; padding-bottom: -30px;">
+  								            <form  method="post" action="Login.jsp">
+  								               E-mail :
+  								               <input type="text" name="email" value=""><br>
+             								    Parola :
+  								               <input type="password" name="password" value=""><br>
+             								    <input type="submit" name="Submit" value="Giriş" class = "btn btn-primary" style = "width:2in;position: relative;left:10px;" ><br><br>
+  								               <center><a href = "loginkayit.jsp" style = "position: relative;"> Üye ol </a></center>
+  								            </form>
+  							           </div>
+                  <% } %>
+        		     </li>
             </ul>
-            
+
             <ul class="nav pull-left">
               <li class=""><a href="ana.jsp">Anasayfa</a></li>
               <li class=""><a href="kurumsal.jsp">Kurumsal</a></li>
-              <li ><a href="hizmetler.jsp">Hizmetler</a></li><% 
+              <li ><a href="hizmetler.jsp">Hizmetler</a></li><%
               if (session.getAttribute("email") != null ){ %>
-            		<li class="active"><a href="urunlerbtn.jsp">Ürünler</a></li>
+            		  <li class="active"><a href="urunlerbtn.jsp">Ürünler</a></li>
               <% }
               else{%>
                 <li class="active"><a href="urunincele.jsp">Ürünler</a></li><% }%>
@@ -81,7 +80,7 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
-    </div>  
+    </div>
     <div class="container">
     <center><img class="img-square"  src="resim/urunler/de.PNG"></center><br>
  	    <div class="row" >
@@ -94,41 +93,41 @@
             <li><a href="#lcd"><i class="icon-chevron-right"></i>LCD-LED Monitörler</a></li>
             <li><a href="#pro"><i class="icon-chevron-right"></i>Projeksiyon</a></li>
             <li><a href="#parca"><i class="icon-chevron-right"></i>Bilgisayar Parçaları</a></li>
-            <li><a href="#harddisk"><i class="icon-chevron-right"></i>Harddisk</a></li>   
+            <li><a href="#harddisk"><i class="icon-chevron-right"></i>Harddisk</a></li>
           </ul>
         </div>
-      <div class="span9">    
-        <section id="lap">
-          <div class="page-header">
-            <h3>Laptop Bilgisayar</h3>
-          </div>   
-          <div class="row-fluid">
-            <div class="span3">
-              <img src="resim/urunler/Asus.jpg">
-              <h5>ASUS X55A </h5>
-              <a href="./Login.jsp"> <button type="button" class="btn  btn-primary"><font color="white">Ürünü İncele</font></button></a>
+								<div class="span9">
+          <section id="lap">
+            <div class="page-header">
+              <h3>Laptop Bilgisayar</h3>
             </div>
-          
-            <div class="span3">
-              <img src="resim/urunler/Acer.jpg">
-              <h5>ACER E1-531-B9602G50MNKS B960 2GB 500GB OB LINUX 15.6</h5>
-              <button type="button" class="btn  btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
-            </div>
-            
-            <div class="span3">
-              <img src="resim/urunler/Exper.jpg">
-              <h5>EXPER NB KARİZMA A5B-C42</h5>
-              <button type="button" class="btn  btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
-            </div>
+            <div class="row-fluid">
+              <div class="span3">
+                <img src="resim/urunler/Asus.jpg">
+                <h5>ASUS X55A </h5>
+                <a href="./Login.jsp"> <button type="button" class="btn  btn-primary"><font color="white">Ürünü İncele</font></button></a>
+              </div>
 
-            <div class="span3">
-              <img src="resim/urunler/toshiba.jpg">
-              <h5>TOSHIBA SATELLITE C850D-10K </h5>
-              <button type="button" class="btn  btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
+              <div class="span3">
+                <img src="resim/urunler/Acer.jpg">
+                <h5>ACER E1-531-B9602G50MNKS B960 2GB 500GB OB LINUX 15.6</h5>
+                <button type="button" class="btn  btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
+              </div>
+
+              <div class="span3">
+                <img src="resim/urunler/Exper.jpg">
+                <h5>EXPER NB KARİZMA A5B-C42</h5>
+                <button type="button" class="btn  btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
+              </div>
+
+              <div class="span3">
+                <img src="resim/urunler/toshiba.jpg">
+                <h5>TOSHIBA SATELLITE C850D-10K </h5>
+                <button type="button" class="btn  btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
+              </div>
             </div>
-          </div>
-        </section>
-    
+          </section>
+
         <section id="tab">
           <div class="page-header">
             <h3>Tablet PC</h3>
@@ -139,13 +138,13 @@
               <h5>Probook PRBT800 Tablet</h5>
               <button type="button" class="btn btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
             </div>
-        
+
             <div class="span3">
               <img src="resim/urunler/tablet1.jpg">
               <h5>Quatronic Qpad 7001 tablet pc</h5>
               <button type="button" class="btn btn-primary"><a href="./Login.jsp"><font color="white">Ürünü İncele</font></button></a>
             </div>
-        
+
             <div class="span3">
               <img src="resim/urunler/tab.jpg">
               <h5>Everest EVERPAD DC-702 Tablet pc</h5>
