@@ -3,7 +3,7 @@
 <html>
   <head>
     <script type="text/javascript" src="/resources/js/lib/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="/bootstrap-master/js/bootstrap-alert.js"></script>  
+    <script type="text/javascript" src="/bootstrap-master/js/bootstrap-alert.js"></script> 
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Dünya Mühendislik Bilgisayar</title>
   </head>

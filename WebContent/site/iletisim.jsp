@@ -7,9 +7,9 @@
     <meta name="author" content="">
 
     <link href="bootstrap-master/docs/assets/css/bootstrap.css" rel="stylesheet">
-	  <link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">  
+    <link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    
+
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -28,52 +28,50 @@
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
               <li class="dropdown">
-                 <% 
-                		session = request.getSession();
-                		if (session.getAttribute("email") != null ){
-                		%>
-                		  <a><%= session.getAttribute("ad") %> <%= session.getAttribute("soyad")%></a>
-                		  <li><a href="logout.jsp">Çıkış</a></li>
-                		<% }
-                		else { %>
-                			<a class="dropdown-toggle" href="#" data-toggle="dropdown"> Giriş Yap <strong class="caret"></strong></a>
-                			<div class="dropdown-menu" style="padding: 20px; padding-bottom: -30px;" >
-      								  <form  method="post" action="Login.jsp"  >
-      								    E-mail :
-      								    <input type="text" name="email" value=""><br>
-      								    Parola :
-      								    <input type="password" name="password" value=""><br>
-      								    <input type="submit" name="Submit" value="Giriş" class = "btn btn-primary" style = "width:2in;position: relative;left:10px;" ><br><br>
-      								    <center><a href = "loginkayit.jsp" style = "position: relative;"> Üye ol </a></center>
-      								  </form>
-    							    </div>
-                	  <% }
-                	%>
-                </li>
-              </ul>     
-              <ul class="nav pull-left">
-                <li class=""><a href="ana.jsp">Anasayfa</a></li>
-                <li class=""><a href="kurumsal.jsp">Kurumsal</a></li>
-                <li><a href="hizmetler.jsp">Hizmetler</a></li>
-                <% 
-                  if (session.getAttribute("email") != null ){ %>
-              			<li><a href="urunlerbtn.jsp">Ürünler</a></li>
-                	<% }
-                  else{%>
-                    <li><a href="urunincele.jsp">Ürünler</a></li> <% }%>
-                    <li><a href="referans.jsp">Referans</a></li>
-                    <li class="active"><a href="iletisim.jsp">İletisim</a></li>
-                %>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+                 <%
+                   session = request.getSession();
+                   if (session.getAttribute("email") != null ){
+                 %>
+                   <a><%= session.getAttribute("ad") %> <%= session.getAttribute("soyad")%></a>
+                   <li><a href="logout.jsp">Çıkış</a></li>
+                   <% }
+                   else { %>
+                     <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Giriş Yap <strong class="caret"></strong></a>
+                     <div class="dropdown-menu" style="padding: 20px; padding-bottom: -30px;" >
+      		     <form  method="post" action="Login.jsp">
+      		       E-mail :
+      		       <input type="text" name="email" value=""><br>
+      		       Parola :
+      		       <input type="password" name="password" value=""><br>
+      		       <input type="submit" name="Submit" value="Giriş" class = "btn btn-primary" style = "width:2in;position: relative;left:10px;" ><br><br>
+      		       <center><a href = "loginkayit.jsp" style = "position: relative;"> Üye ol </a></center>
+      		     </form>
+    		   </div>
+                 <% } %>
+               </li>
+             </ul>
+             <ul class="nav pull-left">
+               <li class=""><a href="ana.jsp">Anasayfa</a></li>
+               <li class=""><a href="kurumsal.jsp">Kurumsal</a></li>
+               <li><a href="hizmetler.jsp">Hizmetler</a></li>
+               <%
+                 if (session.getAttribute("email") != null ){ %>
+              	  <li><a href="urunlerbtn.jsp">Ürünler</a></li>
+                 <% }
+                else{%>
+                  <li><a href="urunincele.jsp">Ürünler</a></li> <% }%>
+                  <li><a href="referans.jsp">Referans</a></li>
+                  <li class="active"><a href="iletisim.jsp">İletisim</a></li>
+	       %>
+             </ul>
+           </div><!--/.nav-collapse -->
+         </div>
+       </div>
+     </div>
 
     <div class="container">
       <div class="row">
-        <div class="span12">		
+        <div class="span12">
           <img class="img-square"  src="resim/iletisim/ilet.jpg">
         </div>
       </div>
@@ -98,7 +96,7 @@
                   </div>
                   <div class="control-group">
                    <label class="control-label" for="textarea"><b>Mesajınız</b></label>
-                    <div class="controls">                     
+                    <div class="controls">
                       <textarea id="textarea" name="not"  style="width: 300px; height: 150px" placeholder=""></textarea>
                     </div>
                   </div>
@@ -116,36 +114,35 @@
           <h4>İLETİŞİM BİLGİLERİ</h4>
             <p> DÜNYA MÜHENDİSLİK BİLGİSAYAR<br>
                 SİSTEMLERİ ve İLETİŞİM SAN. TİC. LTD. ŞTİ.<br>
-                Adres : Ulugazi Mah. İstiklal 
+                Adres : Ulugazi Mah. İstiklal
                 Cad. No: 24/6 Kat.1 <br>
                 (Öğretmenevi Karşısı) SAMSUN<br>
                 E-Mail : dmb@dmb.com.tr <br>
                 Tel. : (362) 435 04 93 <br>
                 Fax : 433 16 75 <br>
                 Gaziler Vergi Dairesi / 322 013 28 39 <br>
-            </p>    
+            </p>
         </div>
       </div>
 
-      <div class="row"> 
+      <div class="row">
         <div class="span6">
           <h4>KROKİ</h4>
           <fieldset>
             <div class="row">
-              <div class="span10">    
+              <div class="span10">
                 <p><a href="http://maps.google.com/maps/ms?f=q&hl=en&geocode=&ie=UTF8&om=1&msa=0&ll=41.2889,36.332989&spn=0.003515,0.009978&z=17&msid=102087767989659699571.00044592593ea84d3e697" target="_blank"><img class="img-rounded" data-src="holder.js/200x200" src="resim/iletisim/dmbharita.gif" alt="kroki "/></a></p>
-              </div> 
-            </div><!-- /.row -->					
-  	      </fieldset>
+              </div>
+            </div><!-- /.row -->
+  	  </fieldset>
         </div>
-      </div>  
-    </div>    
-  </div>     
-           
+      </div>
+    </div>
+  </div>
+
   <!-- Footer
   ================================================== -->
-	<jsp:include page="footer.jsp"></jsp:include>
-    
+  <jsp:include page="footer.jsp"></jsp:include>
   <!-- Le javascript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->

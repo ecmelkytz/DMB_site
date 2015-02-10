@@ -11,7 +11,7 @@
         <div class="container">
           <div class="span10 offset1">
             <p class="pull-left"><br>
-              <a> ©2013 Dünya Mühendislik Bilgisayar Sist. ve İlet. San. Tic. Ltd. Şti. </a> 
+              <a> ©2013 Dünya Mühendislik Bilgisayar Sist. ve İlet. San. Tic. Ltd. Şti. </a>
             </p>
             <p class="pull-right">
               <a href="resim/anasayfa/belge.jpg" target="_blank"><img src="resim/hizmetk.jpg"></a>
@@ -26,6 +26,6 @@
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>
   </body>
 </html>
