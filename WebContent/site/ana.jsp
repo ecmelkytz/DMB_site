@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <link href="bootstrap-master/docs/assets/css/bootstrap.css" rel="stylesheet">
-	  <link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">  
+    <link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <script type="text/javascript" src="/bootstrap-master/js/bootstrap-alert.js"></script>   
-    
+    <script type="text/javascript" src="/bootstrap-master/js/bootstrap-alert.js"></script>
+
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -23,9 +23,9 @@
 
   <body  style="background-color:#eeeeee">
     <jsp:include page="navbar.jsp"></jsp:include>
-  	<center>   	
-   	  <table>
-        <tr>
+      <center>
+   	<table>
+          <tr>
     	    <td><img src="resim/anasayfa/yenilogo.png" ></td>
     	  </tr>
     	</table>
@@ -70,7 +70,7 @@
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div><!-- /.carousel -->
-    
+
       <form>
         <fieldset>
           <legend><center><h4>DÜNYA BİLGİSAYAR ÇÖZÜMLERİ</h4></center></legend>
@@ -85,45 +85,44 @@
             </td>
             <td>
               <img class="img-rounded"  src="resim/anasayfa/marka.png">
-            </td>  
+            </td>
             <td>
               <img class="img-rounded" src="resim/anasayfa/kamera.png">
-            </td>  
-  		      <td>
-              <img class="img-rounded"  src="resim/anasayfa/network.png">	
-            </td>  
+            </td>
+  	    <td>
+	      <img class="img-rounded"  src="resim/anasayfa/network.png">
+            </td>
           </tr>
-        </table>  
-  	    <br>
+        </table
+  	<br>
       	<table>
           <tr>
             <td> Dünya Mühendislik <strong> Exper Uzman Servis Noktası </strong> olarak hizmet vermektedir. Notebooklarınızın her türlü tamiri, anakart, ekran, klavye vb, konusunda uzman teknik servisimiz tarafından garantili olarak gerçekleştirilmektedir. Hertürlü bilgisayar ve yan ürünleri ile ilgili problemimiz için teknik servisimizle görüşebilirsiniz. Servisimizde notebook, notebook ekranı, notebook anakart, notebook klavye, masaüstü bilgisayar, monitör, lcd, yazıcı,  ve diğer bilgisayar ekipmanlarının tamiri, veri - data kurtarma işlemleri yapılmaktadır.<a href="./hizmetler.html">devamı</a>
             </td>
           </tr>
-  		    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
-  	    </table>
-  	    <table>
+  	  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+  	</table>
+  	<table>
           <tr>
-            <td>	   
-  		   		  <div class="span5">
-  		   		    <img src="resim/anasayfa/notebook-tamiri.png">
-  		   		  </div>
-  				  </td>
+            <td>
+  	      <div class="span5">
+  		<img src="resim/anasayfa/notebook-tamiri.png">
+  	      </div>
+  	    </td>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
             <td>
-  		   		  <div class="span4">
-  		  		    <img src="resim/anasayfa/uzman-servis.png">
-  		        </div>
-  		      </td>
-  		    </tr>    		
-  	    </table>        
+  	      <div class="span4">
+  	        <img src="resim/anasayfa/uzman-servis.png">
+  	      </div>
+  	    </td>
+  	  </tr>
+  	</table>
       </div>
     </div>
 
     <!-- Footer
     ================================================== -->
-	  <jsp:include page="footer.jsp"></jsp:include>
-     
+    <jsp:include page="footer.jsp"></jsp:include>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

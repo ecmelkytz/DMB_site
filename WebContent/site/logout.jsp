@@ -7,12 +7,12 @@
   </head>
   <body>
     <%
-	  session.removeAttribute("id");
+    session.removeAttribute("id");
     session.removeAttribute("ad");
     session.removeAttribute("soyad");
     session.removeAttribute("email");
     session.removeAttribute("sifre");
-	  request.getRequestDispatcher("./ana.jsp").include(request,response);	
+    request.getRequestDispatcher("./ana.jsp").include(request,response);
     %>
   </body>
 </html>

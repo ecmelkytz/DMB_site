@@ -4,7 +4,7 @@
 <meta name="author" content="">
 
 <link href="bootstrap-master/docs/assets/css/bootstrap.css" rel="stylesheet">
-<link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">  
+<link href="bootstrap-master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="css/footer.css" rel="stylesheet">
 
 <style type="text/css">
@@ -12,7 +12,7 @@
     padding-top: 60px;
     padding-bottom: 40px;
   }
-      
+
   .form-signin {
     max-width: 300px;
     padding: 19px 29px 29px;
@@ -40,7 +40,7 @@
     padding: 7px 9px;
   }
 </style>
- 
+
 <jsp:include page="navbar.jsp"></jsp:include>
   <div class="container"><br>
     <center><h2>Kullanıcı Girişi</h2></center>
@@ -74,6 +74,4 @@
 <script src="bootstrap-master/docs/assets/js/holder/holder.js"></script>
 <script src="bootstrap-master/docs/assets/js/google-code-prettify/prettify.js"></script>
 <script src="bootstrap-master/docs/assets/js/application.js"></script>
-
- 
 
